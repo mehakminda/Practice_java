@@ -5,7 +5,7 @@ class Student{
 	int age;
 	String name;
 	void learn(){
-		int year =2024; //method variable/reference variable/local variable (stack)
+		int year =2024; //method variable/reference variable/local variable (run-time stack)
 		System.out.println("Is Learning Java");
 	}
 }
@@ -20,3 +20,6 @@ public class First {
 	}
 
 }
+/*
+ * JVM starts execution from main, so control comes to main and loads the main in runtime stack
+ * (ie) main method stack frame is created in runtime-stack area*/

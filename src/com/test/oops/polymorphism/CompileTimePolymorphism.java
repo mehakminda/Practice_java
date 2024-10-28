@@ -16,6 +16,11 @@ public class CompileTimePolymorphism {
 		System.out.println(obj.add(4.5,5.5));
 		System.out.println(obj.add(4.5,10));
 		System.out.println(obj.add(10,4.5));
+		
+		main();
+		main(5);
+		double[] a= {5.5};
+		main(a);
 
 	}
 	public void add() {
@@ -34,6 +39,23 @@ public class CompileTimePolymorphism {
 	public double add(double x, int y) {
 		return x+y;
 	}
+	
+	/*
+	 * Can we overload Main method - yes, but JVM will call main which has string args[]*/
+	public static void main() {
+		System.out.println("main1");
+	}
+	public static void main(int a) {
+		System.out.println("main1");
+	}
+	public static void main(double[] a) {
+		System.out.println("main1");
+	}
+	
+	/*
+	 * public static void main(double[] a) { System.out.println("main1"); }
+	 * this is not allowed 
+	 */
+	
 }
-/*
- * Can we overload Main method - yes, but JVM will call main which has string args[]*/
+
