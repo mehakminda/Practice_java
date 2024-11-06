@@ -1,7 +1,7 @@
 package com.test.oops.constructors;
 
 //parent class has both parameterized and non-parameetrized constructor
-
+// always  parameterized is called by default
 class A3{
 	public A3() {
 		System.out.println("Parent class 0 parameter constructor: ");

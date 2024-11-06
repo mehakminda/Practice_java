@@ -21,7 +21,7 @@ class Employee2{
 	private int age;
 	
 	//method2- constructor/specialized setter
-	//parametertized constructor
+	//parameterized constructor
 	public Employee2(int id1,String name1, int age1) { // no return type
 		id=id1;	
 		name=name1;
@@ -48,6 +48,6 @@ public class ConstructorBasics {
 
 
 /*
- * If for a class, constructor is not present, then javac will add a default constructor , 
+ * If for a class, constructor is not present, then javac will add a default constructor, 
  * default constructor doesnt have any argument
  * */

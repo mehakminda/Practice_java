@@ -10,7 +10,8 @@ class A5{
 class B5 extends A5{
 
 	public B5() {
-		this(4); //call the parametrized constructor of same class
+		this(4); //call the parameterized constructor of same class
+		// super(); is called even before this call
 		System.out.println("zero parameter constructor");
 	}
 	public B5(int x) {

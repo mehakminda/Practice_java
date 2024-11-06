@@ -1,6 +1,6 @@
 package com.test.oops.constructors;
 
-//parent class has parameterized constructor
+//parent class has only parameterized constructor
 class A2{
 	
 	public A2(int x) {
