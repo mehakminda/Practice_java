@@ -2,6 +2,10 @@ package com.test.advance.threads;
 
 import java.util.Scanner;
 
+/*
+ * Create threads using Runnable interface
+ */
+
 class Alpha implements Runnable
 {
 	public void run()

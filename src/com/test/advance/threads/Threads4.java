@@ -2,6 +2,10 @@ package com.test.advance.threads;
 
 import java.util.Scanner;
 
+/*
+ * Create Threads using thread class
+ * Identify the dfference between start and run method
+ */
 class Alpha1 extends Thread
 {
 	public void run()
@@ -69,6 +73,9 @@ public class Threads4 {
 		b.start();
 		g.start();
 		
-		//we do not call run method
+		//we do not call run method , with run it acts as normal method and not thread
+		/*
+		 * a.run(); b.run(); g.run();
+		 */
 	}
 }
