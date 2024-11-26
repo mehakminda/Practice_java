@@ -2,10 +2,19 @@ package com.test.advance.threads;
 
 import java.util.Scanner;
 
+
+/*
+ * Alien class has 2 tasks, calc and message
+ * Can we run multiple individual task using single run method
+ * We can create 2 different thread for a same thread definition
+ */
 class Alien implements Runnable
 {
 
-	@Override
+	/**
+	 * Multiple threads can run a common resource
+	 * multiple thread can run a single run method
+	 */
 	public void run() 
 	{
 		String tName=Thread.currentThread().getName();
