@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 /*
  * Why do we need Threads?
- * Multiple activity are running which are independent of one another but until the first activity is not completed, the second activity 
- * is not executed.
+ * Multiple activity are running which are independent of one another but until the first activity is not completed,
+ *  the second activity is not executed.
  */
 
 public class Threads1 {

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /*
  * Create threads using Runnable interface
+ * Runnable is a functional interface, it has only 1 abstract function that is start
  */
 
 class Alpha implements Runnable
@@ -65,11 +66,11 @@ public class Threads3 {
 		//		b.printingNumber();
 		//		g.printingMessage();
 
-		Thread thread1=new Thread(a);
+		Thread thread1=new Thread(a); //create a stack frame and a thread
 		Thread thread2=new Thread(b);
 		Thread thread3=new Thread(g);
 
-		thread1.start();
+		thread1.start();// gives life to thread by handling it to thread scheduler
 		thread2.start();
 		thread3.start();
 	}

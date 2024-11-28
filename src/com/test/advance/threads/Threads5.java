@@ -59,8 +59,8 @@ public class Threads5 {
 		
 		System.out.println(c.isAlive());//true
 		System.out.println(m.isAlive());//true
-		
-		c.join();
+		System.out.println(Thread.currentThread().isAlive()); //true // is main thread alive?
+		c.join(); //At this point, the main thread is waiting for c to complete
 		m.join();
 				
 		System.out.println("Main thread  done with its work ");
