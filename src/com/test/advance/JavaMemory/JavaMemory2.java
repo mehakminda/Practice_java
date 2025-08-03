@@ -9,7 +9,7 @@ public class JavaMemory2 {
 		
 		/*
 		 * when function is called a copy of local variable was created and stored in currvariable 
-		 * all the modification were made to currvariable and the variabel is removed when function ends
+		 * all the modification were made to currvariable and the variable is removed when function ends
 		 * so no changes to localvariable is done
 		 */
 		System.out.println(localvariable); 

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /*
  * Create threads using Runnable interface
- * Runnable is a functional interface, it has only 1 abstract function that is start
+ *
  */
 
 class Alpha implements Runnable

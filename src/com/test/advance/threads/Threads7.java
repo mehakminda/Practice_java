@@ -2,6 +2,10 @@ package com.test.advance.threads;
 
 /*
  * Concurrency problem: Multiple threads trying to access a single resource at a same time/concurently
+ *
+ * There is a car and 3 children who wanna drive the car
+ * All three children cannot start and drive a single car at the same time.
+ *
  */
 
 class CarShare implements Runnable
