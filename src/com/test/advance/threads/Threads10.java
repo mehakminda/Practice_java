@@ -13,6 +13,7 @@ class Library1 implements Runnable{
 	String res3= new String("SpringBoot");
 
 	public void run(){
+		/*If we write synchronize to run method, it would mean that we are restricting students/threads to enter the library itself */
 		String tname=Thread.currentThread().getName();
 		if("Student1".equals(tname)){
 			try {
