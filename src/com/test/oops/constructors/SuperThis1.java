@@ -1,6 +1,6 @@
 package com.test.oops.constructors;
 
-//parent class has non-parameetrized constructor
+//parent class has non-parameterized constructor
 class A{
 	public A() {
 		System.out.println("zero parameter Parent class constructor");
@@ -12,7 +12,7 @@ class B extends A{
 	public B() {
 		//super(); 
 		/*by default super is present as first line for all constructor, 
-		          this super() calls parent class 0 parameter contructor of parent */
+		          this super() calls parent class 0 parameter constructor of parent */
 		System.out.println("zero parameter child constructor");
 	}
 	public B(int x) {
