@@ -1,4 +1,4 @@
-package com.test.advance.threads;
+package com.test.core.threads;
 
 /**
  * Deadlock : Multiple threads trying to access the same resource and are struck.

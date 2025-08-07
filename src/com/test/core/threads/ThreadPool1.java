@@ -1,4 +1,4 @@
-package com.test.advance.threads;
+package com.test.core.threads;
 
 
 /***

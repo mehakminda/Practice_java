@@ -1,4 +1,4 @@
-package com.test.advance.threads;
+package com.test.core.threads;
 
 /***
  * Producer and Consumer problem: Provides solution to deadlock which used synchronization incorrectly

@@ -1,4 +1,4 @@
-package com.test.advance.threads;
+package com.test.core.threads;
 
 /*
  * Concurrency problem: Multiple threads trying to access a single resource at a same time/concurently

@@ -1,21 +1,18 @@
-package com.test.advance.threads;
+package com.test.core.threads;
 
 import java.util.Scanner;
 
 /*
- * Why do we need Threads?
- * Multiple activity are running which are independent of one another but until the first activity is not completed,
- *  the second activity is not executed.
- * we are wasting CPU's time cyle by waiting.
+ * Create threads using Runnable interface
+ *
  */
 
-public class Threads1 {
-
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-		
+class Alpha implements Runnable
+{
+	public void run()
+	{
 		System.out.println("Banking Activity started...");
-		
+
 		Scanner scan=new Scanner(System.in);
 		System.out.println("please enter the account number");
 		int accNo=scan.nextInt();
@@ -24,9 +21,14 @@ public class Threads1 {
 		System.out.println("Login success!");
 		System.out.println("Banking Activity ended...");
 		System.out.println("********************");
-		
-		
-	
+	}
+}
+
+
+class Beta implements Runnable
+{
+	public void run()
+	{
 		System.out.println("printing number Activity started...");
 		for(int i=0;i<5;i++)
 		{
@@ -34,18 +36,42 @@ public class Threads1 {
 		}
 		System.out.println("printing number Activity ended...");
 		System.out.println("********************");
-		
-		
-		
+	}
+}
+
+
+class Gamma implements Runnable
+{
+	public void run() 
+	{
 		System.out.println("displaying important message Activity started...");
 		for(int i=0;i<4;i++)
 		{
 			System.out.println("Focus is the key");
-			Thread.sleep(4000);
 		}
 		System.out.println("displaying important message activity ended...");
-		
-
 	}
+}
 
+
+public class Threads3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Alpha a=new Alpha();
+		Beta b=new Beta();
+		Gamma g=new Gamma();
+
+		//		a.banking();
+		//		b.printingNumber();
+		//		g.printingMessage();
+
+		Thread thread1=new Thread(a); //create a stack frame and a thread
+		Thread thread2=new Thread(b);
+		Thread thread3=new Thread(g);
+
+		thread1.start();// gives life to thread by handling it to thread scheduler
+		thread2.start();
+		thread3.start();
+	}
 }
