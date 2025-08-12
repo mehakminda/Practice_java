@@ -23,7 +23,8 @@ public class Collection1 {
         System.out.println("List2: "+list2);
 
         List list3=new ArrayList();
-        list3.add(list2);
+        list3.add(list2); //adding a list
+        list3.add(null); //adding null
         list3.add("lol");
         list3.add(2,"Spring boot");
         System.out.println("List3: "+list3);
@@ -42,6 +43,7 @@ public class Collection1 {
         List ll2=new LinkedList(); //only 'List' functions are invoked (as per polymorphism)
         ll2.add(200);
         ll2.add("Jalaj");
+        ll2.add(null); //adding null
         System.out.println("Linked List2: "+ll2);
         System.out.println(ll2.getFirst()); //from deque
 
@@ -118,7 +120,7 @@ public class Collection1 {
 
         //--------------------------LinkedHashSet-------------
 
-        LinkedHashSet hs1=new LinkedHashSet(); //Set Interface
+        LinkedHashSet hs1=new LinkedHashSet(); //Extends HashSet class
         hs1.add(100); hs1.add("java"); hs1.add(100);
         hs1.add("Koyal"); hs1.add(10);hs1.add(20);
 
