@@ -1,7 +1,8 @@
 package com.test.core.exception;
 import java.util.Scanner;
 /**
- * Re-throw the exception -> using throw keyword
+ * Handling the exception can be done both places called and calling function.
+ * If the exception is handled in calling (alpha) function, it will not be propagated to caller (main) function.
  *
  */
 class Gamma{
@@ -16,9 +17,7 @@ class Gamma{
             System.out.println("The res is : "+ res);
         }
         catch(ArithmeticException e){
-            System.out.println("Exception caught in Alpha");
-            throw e;
-            //System.out.println("Catch of Gamma"); //unreachable statement
+            System.out.println("Exception caught in Gamma");
         }
         System.out.println("child method executed");
     }

@@ -26,9 +26,9 @@ public class Exceptions4 {
     public static void main(String[] args) {
         Beta b =new Beta();
         //b.beta();
-        // we will get abnormal termination if the exception is not handled in both child stack frame/parent stack frame
+        // we will get abnormal termination if the exception is not handled in both child stack frame/parent stack frame/both
         try{
-            b.beta(); // the create of beta function is instructing to handle the exception
+            b.beta(); // the creator of beta function is instructing to handle the exception
         }
         catch(ArithmeticException e){
             System.out.println("Exception caught in main method");
