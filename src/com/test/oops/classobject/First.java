@@ -14,7 +14,7 @@ public class First {
 
 	public static void main(String[] args) { 
 	
-		Student s=new Student(); //reference variable (heap)
+		Student s=new Student(); //reference variable (stack)
 		s.learn(); //method call- stack frame
 
 	}

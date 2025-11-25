@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  *  Example application 2 demonstrating custom exception
  *
- *  User between the age <18<65 can apply for license , others aged user cannot.
+ *  User between the age ranges in (18<age<60) can apply for license , others aged user cannot.
  *  Give 2 chances to user who is under aged.
  */
 
@@ -35,7 +35,6 @@ class Applicant{
         }
         else if(age>60){
             throw new OverAgeException("Sorry, You shouldnt drive anymore but you should enjoy your life leisurely ");
-
         }
         else {
             System.out.println("You are eligible to apply for license, please go ahead with the process");
@@ -61,9 +60,11 @@ class RTO{
             }
             catch (UnderAgeException ex) {
                 System.out.println(ex.getMessage());
+                System.out.println("You cannot proceed ahead! Contact officers");
             }
             catch (OverAgeException ex1) {
                 System.out.println(ex1.getMessage());
+                System.out.println("You cannot proceed ahead! Contact officers");
             }
         }
         catch (OverAgeException e1) {

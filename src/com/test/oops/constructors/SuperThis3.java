@@ -1,7 +1,7 @@
 package com.test.oops.constructors;
 
 //parent class has both parameterized and non-parameetrized constructor
-// always  parameterized is called by default
+// always  non-parameterized is called by default
 class A3{
 	public A3() {
 		System.out.println("Parent class 0 parameter constructor: ");
@@ -25,8 +25,11 @@ class B3 extends A3{
 }
 
 public class SuperThis3 {
-	B3 b1=new B3();
-	B3 b2=new B3(10);
+	public static void main(String args[]){
+		B3 b1=new B3();
+		B3 b2=new B3(10);
 
 
+
+	}
 }

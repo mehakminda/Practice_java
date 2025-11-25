@@ -6,6 +6,7 @@ class A2{
 	public A2(int x) {
 		System.out.println("Parent class 1 parameter constructor: "+x);
 	}
+	//since we have added a parameterized constructor, default 0-parameter constructor is not added by javac
 }
 class B2 extends A2{
 
@@ -18,7 +19,7 @@ class B2 extends A2{
 
 		super(5); //comment this line and check the error
 		System.out.println("1 parameter constructor");
-		
+
 	}
 }
 

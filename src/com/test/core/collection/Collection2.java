@@ -1,4 +1,4 @@
-package com.test.oops.collection;
+package com.test.core.collection;
 
 
 import java.util.*;

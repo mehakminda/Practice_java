@@ -12,7 +12,7 @@ class Student{
 			id=id1;	
 			name=name1;
 			age=age1;
-			System.out.println("zero-parametertized constructor");
+			System.out.println("parametertized constructor");
 	}
 	
 

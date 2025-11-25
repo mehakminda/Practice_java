@@ -1,7 +1,7 @@
 package com.test.oops.polymorphism;
 
 /**method-overloading: 
-1.same method name, 
+1. same method name,
 2. different parameter, 
 3. different order of parameter, 
 4. return type can be same/different

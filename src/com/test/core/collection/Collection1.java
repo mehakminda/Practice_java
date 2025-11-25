@@ -1,4 +1,4 @@
-package com.test.oops.collection;
+package com.test.core.collection;
 
 import java.util.*;
 
@@ -45,7 +45,7 @@ public class Collection1 {
         ll2.add("Jalaj");
         ll2.add(null); //adding null
         System.out.println("Linked List2: "+ll2);
-        System.out.println(ll2.getFirst()); //from deque
+       // System.out.println(ll2.getFirst()); //from deque
 
         LinkedList ll3=new LinkedList(); //both 'List' and 'Deque' functions are invoked
         ll3.add(200);
