@@ -1,3 +1,24 @@
-# DSA_Java
+# Practice_Java
 
 All Java concepts with examples
+
+
+classObject
+encapsulation
+constructors
+staticKeyword
+
+polymorphism
+abstraction
+
+threads
+collection 
+exceptions
+generics
+streams
+File Handling
+
+JDBC
+Servlet
+
+Java Networking

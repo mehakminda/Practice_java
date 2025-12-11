@@ -5,6 +5,9 @@ package com.test.oops.staticKeyword;
  * static variables/block exists in heap memory
  * Although the static variables/block exists in heap, they gets executed in stack only
  *
+ *
+ * Static variable/method are first thing that gets executed.
+ *
  */
 public class Static1 {
     static int a=20;
@@ -15,8 +18,11 @@ public class Static1 {
     }
 
     public static void main(String[] args) {
+
         System.out.println("Main method");
     }
 }
 
-//Printing "Hello" such that it shouldnt be in main -> add in static block
+
+
+//Printing "Hello" such that it shouldn't be in main -> add in static block
