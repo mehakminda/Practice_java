@@ -1,40 +1,43 @@
 package com.test.oops.staticKeyword;
 
 /**
- * In java, we are asked to created object of same class  in main inorder to access the non-static method
+ * Static variable is class independent, its value remains same across different object of class.
  *
- * because nonstatic member variables/methods cannot be used in static unless we create an object of those.
- * But non-static method can be used inside non-static method
- *
- * But we can directly call static method inside anotehr static method
- *
- *
+ * Non-static members variables cannot be inside static block. (they are created when object is created)
+ * static block is executed before the non-static variables are created
  */
 public class Static4 {
-    void hello(){
-        System.out.println("Hello ..Mehak");
-    }
-    void greetings(){
-        hello(); //non-static method calling non-static method
+    int a,b;
+    int count;
+    static int count1;
 
+
+    Static4(){
+        System.out.println("Constructor");
+        count++; count1++;
     }
-    static void introduce(){
-        System.out.println("whats your name");
+    Static4(int a){
+        this.a=a;
+        System.out.println("Constructor");
+        count++; count1++;
     }
-    void name(){
-        introduce(); //non-static calling static
+    Static4(int a, int b){
+        this.a=a;
+        this.b=b;
+        System.out.println("Constructor");
+        count++; count1++;
     }
 
     public static void main(String[] args) {
+        System.out.println(Static4.count1);
+        Static4 st31=new Static4();
+        System.out.println(Static4.count1);
+        Static4 st32=new Static4(4);
+        System.out.println(Static4.count1);
+        Static4 st33=new Static4(10,20);
 
-        // hello();//note the error : on-static method 'hello()' cannot be referenced from a static context
-        // static calling non-static
-
-        introduce(); //static calling static
-
-        Static4 st4=new Static4();
-        st4.greetings();
-
+        System.out.println("Count1 :"+ Static4.count1);
+        System.out.println("Count :"+st33.count);
 
     }
 }

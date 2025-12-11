@@ -14,14 +14,14 @@ public class Jdbc1Delete {
         Connection conn= DriverManager.getConnection(url,uname,password);
 
         Statement stmt=conn.createStatement();
-        String query="DELETE from users where name='Swapna'";
+        String query="DELETE from users where name='Swapna B'";
 
         int rowAffected=stmt.executeUpdate(query);
         if(rowAffected!=0){
-            System.out.println("Check Db! Data has been updated");
+            System.out.println("Check Db! Data has been deleted");
         }
         else{
-            System.out.println("Failed to update");
+            System.out.println("Failed to delete");
         }
         conn.close();
         stmt.close();
