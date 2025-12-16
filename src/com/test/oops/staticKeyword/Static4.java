@@ -5,6 +5,8 @@ package com.test.oops.staticKeyword;
  *
  * Non-static members variables cannot be inside static block. (they are created when object is created)
  * static block is executed before the non-static variables are created
+ *
+ * Static member variable is created once and it resides in heap memory and is common for all onject of that class
  */
 public class Static4 {
     int a,b;

@@ -7,7 +7,7 @@ package com.test.oops.staticKeyword;
  * 2. Static block
  * 3. Static method
  * 4. Instance variable(non-static variable)
- * 5. Java initialization block(non-static block) -> constructor( ie at obj creation)
+ * 5. Java initialization block(non-static block) Then constructor( ie at obj creation)
  * 6. non-static method
  */
 public class Static3 {

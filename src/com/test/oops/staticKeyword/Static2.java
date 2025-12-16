@@ -6,7 +6,8 @@ package com.test.oops.staticKeyword;
  * First Static2 class got loaded coz that is the file name and has main method.
  * static block of Static2 class is executed.
  * When we create an object of ABC, only then the ABC class is loaded in class loading subsystem.
- * But since we never created object of DEF, the static block on DEF was never executed.
+ * So Its static block is executed after he class is loaded.
+ * But since we never created object of DEF, the static block of DEF was never executed.
  */
 public class Static2 {
     static int a=20;

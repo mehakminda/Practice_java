@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /*
  * Why do we need Threads?
- * Multiple activity are running which are independent of one another but until the first activity is not completed,
+ * Multiple activity are running which are independent of one another but until the first activity is completed,
  *  the second activity is not executed.
  * we are wasting CPU's time cyle by waiting.
  */

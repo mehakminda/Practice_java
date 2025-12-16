@@ -28,10 +28,6 @@ class CarShare implements Runnable
 		catch(InterruptedException e) {
 			e.printStackTrace();
 		}
-		
-		
-
-
 	}	
 }
 
@@ -39,7 +35,7 @@ public class Threads7 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-CarShare cs=new CarShare();
+        CarShare cs=new CarShare();
 		
 		Thread t1=new Thread(cs);
 		Thread t2=new Thread(cs);

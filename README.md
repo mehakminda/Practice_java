@@ -7,6 +7,7 @@ classObject
 encapsulation
 constructors
 staticKeyword
+Inheritance
 
 polymorphism
 abstraction

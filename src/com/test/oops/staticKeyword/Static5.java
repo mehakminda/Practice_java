@@ -1,12 +1,16 @@
 package com.test.oops.staticKeyword;
 
 /**
- * In java, we are asked to created object of same class  in main inorder to access the non-static method
+ * Static and Non-static methods
  *
- * because nonstatic member variables/methods cannot be used in static unless we create an object of those.
- * But non-static method can be used inside non-static method
+ * In java, we are asked to create an object of same class  in main inorder to access the non-static method
  *
- * But we can directly call static method inside anotehr static method
+ * because non-static member variables/methods cannot be used in static unless we create an object of those.
+ * non-static method can be used inside non-static method
+ *
+ * We can directly call static method inside another static method
+ * We can also call static method insode non-static method
+ * Main is a static method.
  *
  *
  */
@@ -34,6 +38,8 @@ public class Static5 {
 
         Static5 st4=new Static5();
         st4.greetings();
+
+        st4.name();
 
 
     }
