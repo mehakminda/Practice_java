@@ -1,7 +1,7 @@
 package com.test.oops.constructors;
 
 
-//parent class has non-parameetrized constructor
+//parent class has non-parameterized constructor
 class A4{
 	public A4() {
 		System.out.println("Parent class constructor");

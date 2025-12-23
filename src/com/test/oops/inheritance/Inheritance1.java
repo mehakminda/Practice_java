@@ -3,11 +3,17 @@ package com.test.oops.inheritance;
 
 /**
  * Every class extends the Object class
+ *
+ * Private members do not participate in inheritance
  */
+
 class A{ //Parent class/Base class/Super class
     int age;
     private int year;
     void disp(){
+        System.out.println("Human class method");
+    }
+    private void show(){ //private method
         System.out.println("Human class method");
     }
 }
@@ -23,5 +29,7 @@ public class Inheritance1 {
         B b=new B();
         b.showAge();
         b.disp();
+       // b.show(); //private methods will not be inherited to preserve encapsulation
+
     }
 }

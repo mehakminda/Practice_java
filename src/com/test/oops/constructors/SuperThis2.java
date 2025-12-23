@@ -12,7 +12,7 @@ class B2 extends A2{
 
 	public B2() {
 		super(3); //comment this line and check the error
-		/*since there is not 0-parameter constructor in parent, it needs to be mentioned explicitly that which one we are calling*/
+		/*since there is no 0-parameter constructor in parent, it needs to be mentioned explicitly that which one we are calling*/
 		System.out.println("zero parameter constructor");
 	}
 	public B2(int x) {
