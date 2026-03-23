@@ -14,8 +14,9 @@ public class Jdbc2 {
         Connection conn=DriverManager.getConnection(url, uname, password);
         Statement stmt=conn.createStatement();
 
-        //String query="Update users set name='Mehak Minda' where name='Mehak'";
-        String query="select * from users";
+        String query="Update users set name='Mehak Minda' where name='Mehak'";
+        //String query="select * from users";
+       // String query="select * from users where name='dummy' ";
         boolean status=stmt.execute(query);
         if(status){
             //ResultSet
@@ -40,3 +41,8 @@ public class Jdbc2 {
         stmt.close();
     }
 }
+
+
+/**
+ * Difference between execute update vs execute query vs execute?
+ */
