@@ -45,3 +45,13 @@ public class Board {
         }
     }
 }
+/**
+ * what is different between in output of : currentPlayer.playingPiece, currentPlayer.playingPiece.pieceType, currentPlayer.getPlayingPiece()
+ *
+ * currentPlayer.playingPiece — the PlayingPiece object reference (declared type: PlayingPiece, runtime type: PlayingPieceX or PlayingPieceO).
+ * Printing it calls its toString() (none provided), so you get the default Object string (runtime class name + @ + hex-hash).
+ *
+ * currentPlayer.getPlayingPiece() — exactly the same object as above (just returned via the getter). No difference in value; the only difference is field access vs method call.
+ *
+ * currentPlayer.playingPiece.pieceType — the enum value (type PieceType) — prints as X or O because enums’ toString() returns their name.
+ */
