@@ -20,7 +20,7 @@ class Laptop{
 }
 
 public class ToString1 {
-    public static void main(String[] args) {
+    public static void main(String1[] args) {
         Laptop l1=new Laptop();
        l1.model="Dell";
         l1.price=50000;
