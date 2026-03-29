@@ -3,7 +3,8 @@ package com.test.core.exception;
 import java.util.Scanner;
 
 /**
- * We can create multiple catch block. One for each type of exception. Thus, differentiating the different error.
+ * We can create multiple catch block. One for each type of exception.
+ * Thus, differentiating the different error.
  */
 public class Exceptions2 {
     public static void main(String[] args) {
@@ -30,8 +31,6 @@ public class Exceptions2 {
             ar[pos]=elem;//ar[2]=44;
             System.out.println("Data inserted successfully!");
         }
-
-
         catch(ArithmeticException e)
         {
             System.out.println("please give non zero denominator!");

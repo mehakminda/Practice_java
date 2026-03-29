@@ -2,7 +2,9 @@ package com.test.core.strings;
 
 public class String6_Mutable {
     static void main() {
-        //StringBuffer:
+        //StringBuffer: java 1.4
+        //all methods had synchronized keyword
+        //thread safe
         StringBuffer str1=new StringBuffer();
         System.out.println(str1);
         System.out.println(str1.capacity());
@@ -28,7 +30,9 @@ public class String6_Mutable {
         System.out.println(str4==str5); //false, references are different
         System.out.println(str4.equals(str5)); //false , value is also different
         //this means in heap memory 2 different Mehak object is created
-        //
+        //same for string builder
+        //equals method come from Object class
+        // equals method in string builder and string buffer is not overridden
 
 
 
@@ -39,5 +43,15 @@ public class String6_Mutable {
         StringBuilder s2=new StringBuilder("Java");
         System.out.println(s2);
         System.out.println(s2.capacity());//20
+
+        //final has effect on only reference variable not objects
+        //final on immutable and mutable ** interview
+        final StringBuffer ss=new StringBuffer("Hello");
+         ss.append("Hi"); //object
+         //ss=ss.append("world"); //this will give error : reference variable
+        System.out.println(ss);//value got changed
+
+
+
     }
 }
