@@ -1,4 +1,0 @@
-package com.test.designPattern.interview.DesignElevator.entity;
-
-public class ElevatorController {
-}

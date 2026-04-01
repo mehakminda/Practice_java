@@ -1,5 +1,6 @@
 package com.test.designPattern.interview.DesignElevator.enums;
 
-public enum Button {
-    UP,DOWN
+public enum DoorState {
+    DOOR_OPEN,
+    DOOR_CLOSED
 }

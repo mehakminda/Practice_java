@@ -1,11 +1,17 @@
 package com.test.designPattern.interview.DesignElevator;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Building {
-    public final List<Floors> floorsList;
+    public final List<Floor> floors =new ArrayList<>();
 
-    public Building(List<Floors> floorsList) {
-        this.floorsList = floorsList;
+    public Building(int totalFloors, ExternalDispatcher dispatcher) {
+        for(int i=1;i<= totalFloors; i++){
+            floors.add(new Floor(i,dispatcher));
+        }
+    }
+    public Floor getFloor(int floor){
+        return floors.get(floor-1);
     }
 }
