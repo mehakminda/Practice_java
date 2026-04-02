@@ -1,0 +1,15 @@
+package com.test.designPattern.interview.atm;
+
+public class User {
+    UserBankAccount bankAccount;
+    Card card;
+
+    public Card getCard() {
+        return card;
+    }
+
+    public void setCard(Card card) {
+        this.card = card;
+    }
+
+}
