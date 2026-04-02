@@ -1,0 +1,96 @@
+Design Patterns Covered
+
+Strategy Pattern:
+Encapsulate algorithms and switch between them dynamically at runtime.
+
+Observer Pattern:
+Enable one-to-many dependency where objects get notified automatically on changes.
+
+Decorator Pattern:
+Add new behavior to objects dynamically without altering their structure.
+
+Factory Pattern:
+Create objects without exposing instantiation logic to the client.
+
+Abstract Factory Pattern:
+Provide an interface for creating families of related objects.
+
+Chain of Responsibility Pattern:
+Pass requests along a chain of handlers until one processes it.
+
+Proxy Pattern:
+Control access to another object using a placeholder or intermediary.
+
+Null Object Pattern:
+Avoid null checks by providing a default “do-nothing” object.
+
+State Pattern:
+Allow objects to alter their behavior based on internal state.
+
+Composite Pattern:
+Treat individual objects and groups uniformly in a tree structure.
+
+Adapter Pattern:
+Bridge incompatible interfaces to work together seamlessly.
+
+Singleton Pattern:
+Ensure only one instance of a class exists across the application.
+
+Builder Pattern:
+Simplify complex object creation with a step-by-step construction process.
+
+Prototype Pattern:
+Create new objects by cloning existing ones instead of instantiation.
+
+Bridge Pattern:
+Separate abstraction from implementation for flexible code evolution.
+
+Facade Pattern:
+Provide a simplified interface to a complex subsystem.
+
+Flyweight Pattern:
+Optimize memory by sharing common object data efficiently.
+
+Command Pattern:
+Encapsulate requests as objects to enable undo/redo operations.
+
+Iterator Pattern:
+Access elements of a collection sequentially without exposing its structure.
+
+Mediator Pattern:
+Simplify communication between objects by introducing a central mediator.
+
+Memento Pattern:
+Capture and restore an object’s internal state without exposing details.
+
+Template Pattern:
+Define the algorithm structure and allow subclasses to modify steps.
+
+Interpreter Pattern:
+Define grammar and interpret sentences for custom expression evaluation.
+
+
+
+Interview Questions Solved
+
+SOLID Principles,
+
+Design Splitwise,
+
+Design BookmyShow,
+
+Design ATM,
+
+Design Snake n Ladder,
+
+Design Tic Tac Toe,
+
+Design Elevator System,
+
+Design Parking Lot,
+
+Design Car Rental System,
+
+Design Inventory Management System,
+
+Design Cricbuzz
