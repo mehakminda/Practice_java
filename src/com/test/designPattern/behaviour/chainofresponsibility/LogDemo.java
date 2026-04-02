@@ -28,6 +28,7 @@ public class LogDemo {
 
         //Dynamic chaining : DEBUG -> INFO -> ERROR -> FATAL
 
+        //chaining via setter
         debugLogger.setnextLogger(infoLogger);
         infoLogger.setnextLogger(errorLogger);
         errorLogger.setnextLogger(fatalLogger);
