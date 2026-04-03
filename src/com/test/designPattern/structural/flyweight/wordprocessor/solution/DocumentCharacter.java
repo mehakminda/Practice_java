@@ -1,0 +1,27 @@
+package com.test.designPattern.structural.flyweight.wordprocessor.solution;
+
+import com.test.designPattern.behaviour.command.solution.ICommand;
+
+// Concrete Flyweight (Class) - implements the Flyweight interface and stores intrinsic state
+public class DocumentCharacter implements ILetter {
+    // intrinsic data - shared data - common to all objects
+    private final char character;
+    private final String fontType;
+    private final int size;
+
+    public DocumentCharacter(char character, String fontType, int size) {
+        this.character = character;
+        this.fontType = fontType;
+        this.size = size;
+    }
+
+
+    // getter methods only
+
+    @Override
+    public void display(int row, int column) {
+        //display the character of particular font and size at given location
+        System.out.println("Displaying " + character + " at row " + row + " and column " + column);
+    }
+
+}
