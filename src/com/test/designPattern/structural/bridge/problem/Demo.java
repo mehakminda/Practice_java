@@ -1,0 +1,19 @@
+package com.test.designPattern.structural.bridge.problem;
+
+public class Demo {
+    static void main() {
+        System.out.println("======= Bridge Design Pattern - Problem Demo ======");
+
+        LivingThings dog = new Dog();
+        dog.breathe();
+
+        LivingThings fish = new Fish();
+        fish.breathe();
+
+        LivingThings whale = new Whale();
+        whale.breathe();
+
+        LivingThings tree = new Tree();
+        tree.breathe();
+    }
+}
