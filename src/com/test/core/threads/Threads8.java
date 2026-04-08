@@ -21,6 +21,7 @@ class CarShare1 implements Runnable{
 				Thread.sleep(4000);
 				System.out.println(Thread.currentThread().getName() + " Came out of parking lot");
 			}
+			System.out.println("Hello from"+ Thread.currentThread().getName() );
 		}
 		catch(InterruptedException e) {
 			e.printStackTrace();
